@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageButton
+        android:id="@+id/ayarlar_btn"
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ayarlar" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="54dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="100dp"
+        android:scaleX="2.0"
+        android:scaleY="2.0"
+        android:thumbTint="@color/switch_thumb"
+        android:trackTint="@color/switch_track"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/wifi_open_btn"
+        android:layout_width="72dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/switch1"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="@+id/switch1"
+        app:srcCompat="@drawable/wifi_open" />
+    <ImageButton
+        android:id="@+id/wifi_close_btn"
+        android:visibility="gone"
+        android:layout_width="72dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/switch1"
+        app:layout_constraintEnd_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="@+id/switch1"
+        app:srcCompat="@drawable/wifi_close" />
+
+    <ImageButton
+        android:id="@+id/bluetooth_close_btn"
+        android:layout_width="72dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/switch1"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="@+id/switch1"
+        app:srcCompat="@drawable/bluetooth_close" />
+
+    <ImageButton
+        android:id="@+id/bluetooth_open_btn"
+        android:layout_width="72dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/switch1"
+        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="@+id/switch1"
+        app:srcCompat="@drawable/bluetooth_open" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="112dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/btn_bg"
+        android:text="Bağlan"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <Button
+        android:id="@+id/disconnectButton"
+        android:layout_width="112dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/btn_bg"
+        android:text="Bağlantıyı Kes"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/logTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_ic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+
+            <Button
+                android:id="@+id/led_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 1"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/led_2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 2"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/led_1" />
+
+            <Button
+                android:id="@+id/led_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 3"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/led_2" />
+
+            <Button
+                android:id="@+id/led_4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 4"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/led_1" />
+
+            <Button
+                android:id="@+id/led_5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 5"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/led_4" />
+
+            <Button
+                android:id="@+id/led_6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 6"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/led_5" />
+
+            <Button
+                android:id="@+id/led_7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 7"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/led_4" />
+
+            <Button
+                android:id="@+id/led_8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 8"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/led_7" />
+
+            <Button
+                android:id="@+id/led_9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 9"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/led_8" />
+
+            <Button
+                android:id="@+id/led_10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 10"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/led_7" />
+
+            <Button
+                android:id="@+id/led_11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 11"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/led_10" />
+
+            <Button
+                android:id="@+id/led_12"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 12"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/led_11" />
+
+            <Button
+                android:id="@+id/led_13"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 13"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/led_10" />
+
+            <Button
+                android:id="@+id/led_14"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 14"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/led_13" />
+
+            <Button
+                android:id="@+id/led_15"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 15"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/led_14" />
+
+            <Button
+                android:id="@+id/led_16"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/led_btn_bg_closed"
+                android:text="LED 16"
+                android:textAllCaps="false"
+                android:textColor="#353535"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/led_13" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/logTextView"
+        android:layout_width="397dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#f0f0f0"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

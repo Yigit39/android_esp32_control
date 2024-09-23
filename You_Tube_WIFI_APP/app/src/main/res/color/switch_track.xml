@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#6DEDD1" android:state_checked="true" /> <!-- Açıkken (track rengi) -->
+    <item android:color="#84F1A3" android:state_checked="false" /> <!-- Kapalıyken (track rengi) -->
+</selector>

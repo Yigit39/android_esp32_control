@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/wifi_server"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="http://192.168.43.44/"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/wifi_ad"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:hint="cokgizlinet"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wifi_server" />
+
+            <EditText
+                android:id="@+id/wifi_sifre"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:hint="gizlisifrebu"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/wifi_ad"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/wifi_ad" />
+
+            <EditText
+                android:id="@+id/editTextLed1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="LED 1 ismini girin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wifi_ad" />
+
+    <EditText
+        android:id="@+id/editTextLed2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:hint="LED 2 ismini girin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed1" />
+
+    <EditText
+        android:id="@+id/editTextLed3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="LED 3 ismini girin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed2" />
+
+    <EditText
+        android:id="@+id/editTextLed4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 4 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed3"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 5 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed4"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed6"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 6 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed5"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed7"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 7 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed6"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed8"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 8 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed7"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed9"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 9 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed8"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+    <EditText
+        android:id="@+id/editTextLed10"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 10 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed9"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed11"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 11 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed10"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed12"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 12 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed11"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed13"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 13 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed12"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed14"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 14 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed13"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed15"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 15 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed14"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextLed16"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="LED 16 ismini girin"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed15"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_save_bg"
+        android:text="Kaydet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextLed16" />
+
+    <ImageButton
+        android:id="@+id/add_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/remove_btn"
+        app:srcCompat="@drawable/add" />
+
+    <ImageButton
+        android:id="@+id/remove_btn"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/add_btn"
+        app:layout_constraintTop_toTopOf="@+id/buttonSave"
+        app:srcCompat="@drawable/remove" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed1"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed1" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed2"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed2" />
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed3"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed3" />
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed4"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed4" />
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed5"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed5" />
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed6"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed6"/>
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed7"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed7" />
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed8"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed8" />
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed9"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed9" />
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed10"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed10" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed11"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed11" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed12"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed12" />
+
+    <CheckBox
+        android:id="@+id/checkBox13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed13"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed13" />
+
+    <CheckBox
+        android:id="@+id/checkBox14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed14"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed14" />
+    <CheckBox
+        android:id="@+id/checkBox15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed15"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed15" />
+
+    <CheckBox
+        android:id="@+id/checkBox16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed16"
+        app:layout_constraintEnd_toEndOf="@+id/ac"
+        app:layout_constraintStart_toStartOf="@+id/ac"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed16" />
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="277dp"
+        android:layout_height="144dp"
+        android:layout_centerInParent="true"
+        android:timePickerMode="spinner"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remove_btn" />
+
+    <TextView
+        android:id="@+id/ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="AÇILIŞ"
+        app:layout_constraintEnd_toStartOf="@+id/kapa"
+        app:layout_constraintStart_toEndOf="@+id/editTextLed1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="KAPANIŞ"
+        app:layout_constraintBottom_toBottomOf="@+id/ac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ac" />
+
+    <CheckBox
+        android:id="@+id/check_Kapa_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed1"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed1" />
+
+    <CheckBox
+        android:id="@+id/check_Kapa_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed2"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed2" />
+    <CheckBox
+        android:id="@+id/check_Kapa_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed3"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed3" />
+    <CheckBox
+        android:id="@+id/check_Kapa_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed4"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed4" />
+    <CheckBox
+        android:id="@+id/check_Kapa_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed5"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed5" />
+    <CheckBox
+        android:id="@+id/check_Kapa_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed6"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed6"/>
+    <CheckBox
+        android:id="@+id/check_Kapa_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed7"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed7" />
+    <CheckBox
+        android:id="@+id/check_Kapa_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed8"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed8" />
+    <CheckBox
+        android:id="@+id/check_Kapa_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed9"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed9" />
+    <CheckBox
+        android:id="@+id/check_Kapa_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed10"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed10" />
+
+    <CheckBox
+        android:id="@+id/check_Kapa_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed11"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed11" />
+
+    <CheckBox
+        android:id="@+id/check_Kapa_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed12"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed12" />
+
+    <CheckBox
+        android:id="@+id/check_Kapa_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed13"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed13" />
+
+    <CheckBox
+        android:id="@+id/check_Kapa_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed14"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed14" />
+
+    <CheckBox
+        android:id="@+id/check_Kapa_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed15"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed15" />
+
+    <CheckBox
+        android:id="@+id/check_Kapa_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/editTextLed16"
+        app:layout_constraintEnd_toEndOf="@+id/kapa"
+        app:layout_constraintStart_toStartOf="@+id/kapa"
+        app:layout_constraintTop_toTopOf="@+id/editTextLed16" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
